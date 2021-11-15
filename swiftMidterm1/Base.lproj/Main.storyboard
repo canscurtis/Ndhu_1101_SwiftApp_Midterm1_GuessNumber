@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swiftMidterm1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-1h-uxO">
-                                <rect key="frame" x="69.5" y="84" width="275" height="48"/>
+                                <rect key="frame" x="57.666666666666657" y="84" width="275" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sl-vY-QAA">
-                                <rect key="frame" x="54.5" y="162" width="305" height="90"/>
+                                <rect key="frame" x="42.666666666666657" y="162" width="305" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="305" id="BhE-9f-T3v"/>
                                     <constraint firstAttribute="height" constant="90" id="x9a-rc-mua"/>
                                 </constraints>
-                                <string key="text">410721310Curtis Kuan-Ting Lee</string>
+                                <string key="text">410721310
+Curtis Kuan-Ting Lee</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Guess a Number (1~10)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-v2-V7L">
-                                <rect key="frame" x="67" y="340" width="280" height="50"/>
+                                <rect key="frame" x="55" y="340" width="280" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4Y8-zp-7s6"/>
                                     <constraint firstAttribute="width" constant="280" id="hRM-II-K11"/>
@@ -43,24 +44,21 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bza-La-XPa">
-                                <rect key="frame" x="67" y="428" width="280" height="60"/>
+                                <rect key="frame" x="55" y="428" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="LFr-Dm-52H"/>
                                     <constraint firstAttribute="width" constant="280" id="OzS-f5-Wy9"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Comfirm">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Comfirm">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="guessFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLp-aA-ohA"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKj-H3-KRa">
-                                <rect key="frame" x="67" y="565" width="280" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKj-H3-KRa">
+                                <rect key="frame" x="55" y="565" width="280" height="38.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="06o-qv-mei"/>
                                 </constraints>
@@ -69,21 +67,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-jx-Jp4">
-                                <rect key="frame" x="67" y="787" width="280" height="37"/>
+                                <rect key="frame" x="55" y="735" width="280" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="6XD-57-wUJ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="New Game">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="20" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="gray" title="New Game">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="renewFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35q-m8-1eD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -103,10 +97,15 @@
                             <constraint firstItem="9sl-vY-QAA" firstAttribute="top" secondItem="uOn-1h-uxO" secondAttribute="bottom" constant="30" id="t7d-j5-8GX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnRenew" destination="vtL-jx-Jp4" id="rAw-61-MYf"/>
+                        <outlet property="inputNumber" destination="zfm-v2-V7L" id="P2k-Ud-gyS"/>
+                        <outlet property="outputResult" destination="hKj-H3-KRa" id="QmP-qa-Lwj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="18.46153846153846" y="83.175355450236964"/>
         </scene>
     </scenes>
     <resources>
