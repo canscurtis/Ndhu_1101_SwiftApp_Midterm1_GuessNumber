@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         numGue = Int(inputNumber.text!)!
         if(nPlayCounts>=5){
             outputResult.text = "Fail the Game ..."
+            btnRenew.isHidden = false
         }
         else if (numGue > numAns) {
             outputResult.text = "Less than " + String(numGue)
